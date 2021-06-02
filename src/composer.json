@@ -1,0 +1,16 @@
+{
+    "name": "medcon/awproject",
+    "authors": [{
+        "name": "k3lm4n",
+        "email": "kelmandossantos@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "../app/",
+            "Src\\": "../src/"
+        }
+    }
+
+
+}
