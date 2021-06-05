@@ -16,7 +16,9 @@ class ClassRoutes
         $this->Rota = array(
             "" => "ControllerHome",
             "home" => "ControllerHome",
-            "sitemap" => "ControllerSiteMap"
+            "sitemap" => "ControllerSiteMap",
+            "MarcarConsulta" => "ControllerMarcarConsulta",
+            "DashBoard" => "ControllerDashBoard"
         );
         if (array_key_exists($I, $this->Rota)) {
             if (file_exists(DIRREQ . "app/controller/{$this->Rota[$I]}.php")) {
