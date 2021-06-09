@@ -18,7 +18,11 @@ class ClassRoutes
             "home" => "ControllerHome",
             "sitemap" => "ControllerSiteMap",
             "MarcarConsulta" => "ControllerMarcarConsulta",
-            "DashBoard" => "ControllerDashBoard"
+            "DashBoard" => "ControllerDashBoard",
+            "RegAdmin" => "ControllerRegAdmin",
+            "MarcarConsulta" => "ControllerMarcarConsulta",
+            "RegPac"=>"ControllerRegistroPaciente"
+            
         );
         if (array_key_exists($I, $this->Rota)) {
             if (file_exists(DIRREQ . "app/controller/{$this->Rota[$I]}.php")) {

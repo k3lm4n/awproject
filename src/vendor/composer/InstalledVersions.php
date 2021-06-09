@@ -32,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '170508d89b987d20be2c57bb1bc9a5eb63b0966c',
+    'reference' => '9ca516e479e726ff780d6d6ffed035f3fa992ab8',
     'name' => 'medcon/awproject',
   ),
   'versions' => 
@@ -44,7 +44,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '170508d89b987d20be2c57bb1bc9a5eb63b0966c',
+      'reference' => '9ca516e479e726ff780d6d6ffed035f3fa992ab8',
     ),
   ),
 );

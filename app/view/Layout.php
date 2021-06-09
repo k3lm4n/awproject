@@ -10,7 +10,7 @@
     <title><?php echo $this->getTitle(); ?></title>
     <meta name="description" content="<?php echo $this->getDescription(); ?>">
     <meta name="keywords" content="<?php echo $this->getKeywords(); ?>">
-    <link rel="stylesheet" href="<?php echo DIRCSS . "bootstrap.css"; ?>" rel="stylesheet" >
+    <link rel="stylesheet" href="<?php echo DIRCSS . "bootstrap.css"; ?>" rel="stylesheet">
     <script src="<?php echo DIRJS . "bootstrap.bundle.js"; ?>"></script>
     <link rel="stylesheet" href="<?php echo DIRCSS . "style.css"; ?>">
     <?php echo $this->addHead(); ?>
@@ -36,6 +36,9 @@
 
     <script src="<?php echo DIRJS . "bootstrap.js"; ?>"></script>
     <script src="<?php echo DIRJS . "popper.min.js"; ?>"></script>
+    <script src="<?php echo DIRJS . "jquery-3.6.0.min.js"; ?>"></script>
+    <script src="<?php echo DIRJS ."functions.js" ;?>"></script>
+    
 </body>
 
 </html>

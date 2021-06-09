@@ -8,7 +8,7 @@ class Dispatch extends ClassRoutes
 {
     #Attr
 
-    private  $Method;
+    private $Method;
     private $Param = [];
     private $Obj;
 
