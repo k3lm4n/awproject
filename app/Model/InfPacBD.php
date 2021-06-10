@@ -5,7 +5,7 @@ namespace App\Model;
 use App\Model\ClassConnection;
 
 
-class ConsultaBD extends ClassConnection
+class InfPacBD extends ClassConnection
 {
     
     private $Db;

@@ -1,9 +1,9 @@
 <?php
-namespace App\model;
+namespace App\Model;
 
 
 
-abstract class ClassConnection{
+class ClassConnection{
 
     #Realiza Conexao
     public function connectionDB(){

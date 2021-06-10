@@ -10,7 +10,16 @@
                     <a class="nav-link active" aria-current="page" href="<?php echo DIRPAGE; ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo DIRPAGE; ?>">Comming Out</a>
+                    <a class="nav-link" href="<?php echo DIRPAGE."RegPac"; ?>">Registrar Paciente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo DIRPAGE."conPen"; ?>">Consultas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo DIRPAGE."Especialidade"; ?>">Especialidade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo DIRPAGE."Medico"; ?>">Medico</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo DIRPAGE; ?>">Sobre Nós</a>

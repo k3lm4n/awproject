@@ -6,10 +6,10 @@ namespace App\Controller;
 use Src\classes\ClassRender;
 use Src\interfaces\InterfaceView;
 
-use App\model\RegistroPaciente;
-use App\Model\RegistroPaciente as ModelRegistroPaciente;
 
-class ControllerRegistroPaciente extends ModelRegistroPaciente
+use App\Model\PacienteBD as ModelRegistroPaciente;
+
+class ControllerRegistroPaciente 
 {
 
 
@@ -28,7 +28,7 @@ class ControllerRegistroPaciente extends ModelRegistroPaciente
     {
 
         $Render = new ClassRender();
-        $Render->setTitle("MedCon - Registro Administrador");
+        $Render->setTitle("MedCon - Registro Paciente");
         $Render->setDescription("MedCon");
         $Render->setKeywords("WebApps");
         $Render->setDir("RegistroPaciente");
@@ -39,7 +39,7 @@ class ControllerRegistroPaciente extends ModelRegistroPaciente
 
 
 
-    private function recVar()
+    private function recVariaveis()
     {
         if (isset($_POST['nome'])) {
             $this->nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -56,5 +56,12 @@ class ControllerRegistroPaciente extends ModelRegistroPaciente
         if (isset($_POST['endereco'])) {
             $this->Endereco = filter_input(INPUT_POST, 'endereco', FILTER_SANITIZE_SPECIAL_CHARS);
         }
+    }
+    public function Registrar()
+    {
+        
+        $this->recVariaveis();
+    
+        //$this->PacienteBD->RegistroPaciente($this->nome, $this->sobrenome, $this->DataNasc, $this->$Sexo, $this->Endereco);
     }
 }

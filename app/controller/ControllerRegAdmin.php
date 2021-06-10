@@ -2,13 +2,13 @@
 
 namespace App\Controller;
 
-
+use App\Model\AdminBD;
 use Src\classes\ClassRender;
 use Src\interfaces\InterfaceView;
-use App\Model\AdminBD;
+use App\Controller\Framework;
 
 
-class ControllerRegAdmin extends AdminBD
+class ControllerRegAdmin 
 {
 
 
@@ -17,7 +17,7 @@ class ControllerRegAdmin extends AdminBD
     protected $sobrenome;
     protected $username;
     protected $password;
-
+    protected $frame;
 
 
 
@@ -25,12 +25,15 @@ class ControllerRegAdmin extends AdminBD
     public function __Construct()
     {
 
+        
         $Render = new ClassRender;
         $Render->setTitle("MedCon - Registro Administrador");
         $Render->setDescription("MedCon");
         $Render->setKeywords("WebApps");
         $Render->setDir("RegistroAdmin");
         $Render->renderLayout();
+    
+
     }
 
 
@@ -56,8 +59,9 @@ class ControllerRegAdmin extends AdminBD
 
     public function Registrar()
     {
-        $Reg = new AdminBD;
+        
         $this->recVariaveis();
-        $this-> RegistroAdmins($this->nome, $this->sobrenome, $this->username, $this->password);
+    
+        //$this->AdminBD->RegistroAdmins($this->nome, $this->sobrenome, $this->username, $this->password);
     }
 }

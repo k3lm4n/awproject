@@ -1,8 +1,8 @@
 <?php
 
-namespace App\model;
+namespace App\Model;
 
-use App\model\ClassConnection;
+use App\Model\ClassConnection;
 
 
 
@@ -10,7 +10,7 @@ class AdminBD extends ClassConnection
 {
 
     private $Db;
-    use ClassConnection;
+
     public function RegistroAdmins($Nome, $SobreNome,$username,$password)
     {  
         $this->Db = $this->connectionDB()->prepare("INSERT INTO tb_admin (nome, sobrenome, username, password) VALUES ( ?,?,?,?)");

@@ -5,7 +5,7 @@ namespace App\Model;
 use App\Model\ClassConnection;
 
 
-class RegistroPaciente extends ClassConnection
+class PacienteBD extends ClassConnection
 {
 
     private $Db;

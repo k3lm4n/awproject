@@ -5,7 +5,7 @@ namespace App\Model;
 use App\Model\ClassConnection;
 
 
-class ExameBD extends ClassConnection
+class AnaliseBD extends ClassConnection
 {
     
     private $Db;

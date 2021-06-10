@@ -21,7 +21,10 @@ class ClassRoutes
             "DashBoard" => "ControllerDashBoard",
             "RegAdmin" => "ControllerRegAdmin",
             "MarcarConsulta" => "ControllerMarcarConsulta",
-            "RegPac"=>"ControllerRegistroPaciente"
+            "RegPac"=>"ControllerRegistroPaciente",
+            "Especialidade"=>"ControllerEspecialidade",
+            "conPen"=>"ControllerConsultas",
+            "Medico"=>"ControllerMedico"
             
         );
         if (array_key_exists($I, $this->Rota)) {
