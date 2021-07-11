@@ -217,21 +217,7 @@
                         
                         <tbody id="GetMedicos">
                            
-                            <tr>
-                                <td>
-                                    Airi Satou
-                                </td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>Tokyo</td>
-                                <td>33</td>
-                                <td>33</td>
-                                <td colspan="2">
-                                    <a class=" btn btn-outline-warning" style="margin-left: 2px;" href="">Editar</a>
-                                    <a class=" btn btn-outline-danger" href="">Eliminar</a>
-                                </td>
-
-                            </tr>
+                           
 
                         </tbody>
                         <tfoot>
