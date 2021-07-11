@@ -3,7 +3,7 @@ namespace App\Model;
 
 
 
-class ClassConnection{
+abstract class ClassConnection{
 
     #Realiza Conexao
     public function connectionDB(){

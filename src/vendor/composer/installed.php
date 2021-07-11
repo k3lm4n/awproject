@@ -1,33 +1,59 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => '16ec74fb15b88af83bdab2ae883b168651932a03',
+        'name' => 'medcon/awproject',
+        'dev' => true,
     ),
-    'reference' => '96a18b959a51465fe41bdb99123b99ef87cb523a',
-    'name' => 'medcon/awproject',
-  ),
-  'versions' => 
-  array (
-    'medcon/awproject' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '96a18b959a51465fe41bdb99123b99ef87cb523a',
+    'versions' => array(
+        'coffeecode/datalayer' => array(
+            'pretty_version' => '1.1.8',
+            'version' => '1.1.8.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../coffeecode/datalayer',
+            'aliases' => array(),
+            'reference' => '52e209190752eccc0bfd8ff3abcdd607ed4c01c1',
+            'dev_requirement' => false,
+        ),
+        'coffeecode/router' => array(
+            'pretty_version' => '1.0.8',
+            'version' => '1.0.8.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../coffeecode/router',
+            'aliases' => array(),
+            'reference' => '29f73e12351a116e9bbb3f695595777a09e18077',
+            'dev_requirement' => false,
+        ),
+        'league/plates' => array(
+            'pretty_version' => 'v4.0.0-alpha',
+            'version' => '4.0.0.0-alpha',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../league/plates',
+            'aliases' => array(),
+            'reference' => 'f53f4c1fa4bf307d0f3858a348172ff4faf7669a',
+            'dev_requirement' => false,
+        ),
+        'medcon/awproject' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '16ec74fb15b88af83bdab2ae883b168651932a03',
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.5.0',
+            'version' => '6.5.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => 'a5b5c43e50b7fba655f793ad27303cd74c57363c',
+            'dev_requirement' => false,
+        ),
     ),
-    'phpmailer/phpmailer' => 
-    array (
-      'pretty_version' => 'v6.4.1',
-      'version' => '6.4.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '9256f12d8fb0cd0500f93b19e18c356906cbed3d',
-    ),
-  ),
 );

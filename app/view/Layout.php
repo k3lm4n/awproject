@@ -10,8 +10,11 @@
     <title><?php echo $this->getTitle(); ?></title>
     <meta name="description" content="<?php echo $this->getDescription(); ?>">
     <meta name="keywords" content="<?php echo $this->getKeywords(); ?>">
+
+    <link rel="stylesheet" href="<?php echo DIRCSS . "volt.css"; ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo DIRCSS . "bootstrap.css"; ?>" rel="stylesheet">
-    <script src="<?php echo DIRJS . "bootstrap.bundle.js"; ?>"></script>
+    <script src="<?php echo DIRJS . "popper.min.js"; ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="<?php echo DIRCSS . "style.css"; ?>">
     <?php echo $this->addHead(); ?>
 </head>
@@ -34,11 +37,12 @@
         <?php echo $this->addFooter(); ?>
     </div>
 
-    <script src="<?php echo DIRJS . "bootstrap.js"; ?>"></script>
-    <script src="<?php echo DIRJS . "popper.min.js"; ?>"></script>
-    <script src="<?php echo DIRJS . "jquery-3.6.0.min.js"; ?>"></script>
-    <script src="<?php echo DIRJS ."functions.js" ;?>"></script>
-    
+
+
+    <script src="<?php echo DIRJS . "jquery.js"; ?>"></script>
+
+    <script src="<?php echo DIRJS . "func.js"; ?>"></script>
+
 </body>
 
 </html>

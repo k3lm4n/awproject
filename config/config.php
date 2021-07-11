@@ -15,7 +15,8 @@ define('DIRCSS', DIRPAGE . "public/css/");
 define('DIRJS', DIRPAGE . "public/js/");
 
 #Acesso ao banco de dados
-define('HOST', "127.0.0.1:3306");
+define('HOST', "localhost");
 define('DB', "medcon");
 define('USER', "root");
 define('PASS', "");
+

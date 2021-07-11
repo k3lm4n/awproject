@@ -1,17 +1,27 @@
 <?php
 namespace App\Controller;
 
-use Src\classes\ClassRender;
-use Src\interfaces\InterfaceView;
-class ControllerConsultas extends ClassRender implements InterfaceView {
+use App\Model\ConsultaBD;
 
-    public function __construct()
+class ControllerConsultas extends ConsultaBD{
+
+    
+    public function post()
     {
-        $this->setTitle("MedCon - Consultas");
-        $this->setDir("ConsultasPen");
-        $this->setDescription("MedCon");
-        $this->setKeywords("WebApps");
-        $this->renderLayout();
+        
+    }
+
+    public function get()
+    {
+       
+    }
+
+    public function put()
+    {
+    }
+
+    public function delete()
+    {
     }
     
 }

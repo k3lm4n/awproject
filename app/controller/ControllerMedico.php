@@ -1,17 +1,31 @@
 <?php
+
 namespace App\Controller;
 
-use Src\classes\ClassRender;
-use Src\interfaces\InterfaceView;
-class ControllerMedico extends ClassRender implements InterfaceView {
+use App\Model\MedicoBD;
 
-    public function __construct()
+
+class ControllerMedico extends MedicoBD
+{
+
+
+    public function post()
     {
-        $this->setTitle("MedCon - Medico");
-        $this->setDir("MedRegistro");
-        $this->setDescription("MedCon");
-        $this->setKeywords("WebApps");
-        $this->renderLayout();
+        $data = $_POST;
+        $medico = new MedicoBD();
+        $medico->insert($data);
     }
-    
+
+    public function get()
+    {
+        $this->ListarMedico();
+    }
+
+    public function put()
+    {
+    }
+
+    public function delete()
+    {
+    }
 }

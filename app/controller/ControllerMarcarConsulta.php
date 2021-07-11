@@ -4,14 +4,22 @@ namespace App\Controller;
 use Src\classes\ClassRender;
 use Src\interfaces\InterfaceView;
 class ControllerMarcarConsulta extends ClassRender implements InterfaceView {
-
-    public function __construct()
+ 
+    public function post()
     {
-        $this->setTitle("MedCon - Marcação de Consulta");
-        $this->setDir("MarcarConsulta");
-        $this->setDescription("MedCon");
-        $this->setKeywords("WebApps");
-        $this->renderLayout();
+        
     }
-    
+
+    public function get()
+    {
+       
+    }
+
+    public function put()
+    {
+    }
+
+    public function delete()
+    {
+    }
 }

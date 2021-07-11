@@ -22,20 +22,20 @@ class PacienteBD extends ClassConnection
         $this->Db->bindParam(":endereco", $Endereco, \PDO::PARAM_STR);
         $this->Db->execute();
     }
-    protected function ListaPaciente()
+    public function ListaPaciente()
     {
-        $this->Db = $this->connectionDB()->query("SELECT * FROM tb_pacientes");
-        $pacientes = $this->Db;
-        foreach ($pacientes as $paciente) {
-            echo "<tr>
-                    <th scope=\"row\">{$paciente["codPac"]}</th>
-                    <td>{$paciente["nome"]}</td>
-                    <td>{$paciente["sobrePac"]}</td>
-                    <td>{$paciente["datanasc"]}</td>
-                    <td>{$paciente["sexo"]}</td>
-                    <td>{$paciente["endereco"]}</td>
-                   
-                </tr>";
+        $query = $this->connectionDB()->query("SELECT * FROM tb_paciente");
+
+        while ($paciente = $query->fetch_array()) {
+            echo "<tr>";
+            echo "<td>" . $paciente['codPac'] . "</td>";
+            echo "<td>" . $paciente['nomePac'] . "</td>";
+            echo "<td>" . $paciente['sobrePac'] . "</td>";
+            echo "<td>" . $paciente['dataNasc'] . "</td>";
+            echo "<td>" . $paciente['sexo'] . "</td>";
+            echo "<td>" . $paciente['endereco'] . "</td>";
+            echo "<td align=\"center\">" . "<a href=" . DIRPAGE . "RegPacUpdate\\" . $paciente['codPac'] . ">Actualizar</a></td>";
+            echo "</tr>";
         }
     }
 }
