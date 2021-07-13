@@ -146,7 +146,7 @@
 
                                 </div>
                                 <div class="row mb-md-2 mt-md-2">
-                               
+
                                     <div class=" col-md-6">
                                         <label class="form-check-label" for="">Centro Registrado</label>
                                         <input type="text" id="centro" class="form-control" id="centReg" name="endereco" placeholder="" required>
@@ -168,7 +168,7 @@
                                     </div>
                                     <div class=" col-md-4 mt-2">
                                         <label class="form-check-label" for=""></label>
-                                        <input type="password" class="form-control" id="pass2"  name="pass1" placeholder="Repita a sua Password" required>
+                                        <input type="password" class="form-control" id="pass2" name="pass1" placeholder="Repita a sua Password" required>
                                     </div>
                                 </div>
                                 <div class="">
@@ -176,7 +176,7 @@
                                         <button type="reset" class=" btn btn-outline-danger"> Voltar</button>
                                     </div>
                                     <div class=" col-md-3 container" style=" float:right;">
-                                        <button type="submit" id="dadomed" class="btn btn-outline-danger">Continuar</button>
+                                        <button type="submit" id="dadomed" style="float:right;" class="btn btn-outline-danger">Continuar</button>
                                     </div>
 
                                 </div>
@@ -214,10 +214,10 @@
                                 <th>Accao</th>
                             </tr>
                         </thead>
-                        
+
                         <tbody id="GetMedicos">
-                           
-                           
+
+
 
                         </tbody>
                         <tfoot>
@@ -248,42 +248,22 @@
             </div>
             <div class=" card-body card-body px-6 ">
                 <legend style="text-align:center;"> <strong> </strong></legend>
-                <form method="POST" action="<?php echo DIRPAGE . 'RegAdmin/Registrar'; ?>" name="formReg" id="formReg">
-                    <div class=" row g-2">
-                        <div class=" col-auto">
-                            <label for="Nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" name="nome" required>
-
-                        </div>
-                        <div class=" col-auto">
-                            <label for="SobreNome" class="form-label">Sobrenome</label>
-                            <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+                <form id="FormEspecialidade">
+                    <div class=" row mb-md-4">
+                        <div class="col-md-2"></div>
+                        <div class=" col-md-8">
+                            <label for="Tipo" class="form-label">Tipo</label>
+                            <input type="text" class="form-control" id="tipoEsp" required>
                         </div>
                     </div>
-                    <div class="mb-3 mt-2 col-md-12">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Sexo</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Feminino">Feminino</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-check-label" for="">Data de Nascimento</label>
-                        <input type="text" value="" class="form-control" placeholder="DIA/MES/ANO" required />
 
-                    </div>
-                    <div class=" mb-3">
-                        <label class="form-check-label" for="">Endereco</label>
-                        <input type="Endereco" class="form-control" id="endereco" name="endereco" placeholder="Provincia, Municipio, Barirro, Rua" required>
-                    </div>
-
-
-                    <div class="">
+                    <div class="row ">
                         <div class=" col-md-3 container" style=" float:left;">
                             <button type="reset" class=" btn btn-outline-danger"> Voltar</button>
                         </div>
-                        <div class=" col-md-3 container" style=" float:right;">
-                            <button type="submit" class="btn btn-outline-danger">Continuar</button>
+
+                        <div class=" col-md-3 container">
+                            <button type="submit" id="dadoEspe" style="float:right;" class="btn btn-outline-danger">Continuar</button>
                         </div>
 
                     </div>
@@ -298,9 +278,9 @@
             </div>
             <div class="card-body px-md-10">
                 <div class="row col-auto">
-                    <div class="col-md-10 text-nowrap">
+                    <div class="col-md-6 text-nowrap">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-6">
                         <div class="text-md-right dataTables_filter" id="dataTable_filter">
                             <label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Procurar" /></label>
                         </div>
@@ -310,24 +290,19 @@
                     <table class=" table table-hover px-md-10" id="dataTable">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
+                                <th>iD</th>
+                                <th>Tipo</th>
+
+                                <th>Accao</th>
+
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="GetEspecialidades">
                             <tr>
-                                <td>
-                                    Airi Satou
-                                </td>
+                                <td>Airi Satou</td>
                                 <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>33</td>
-                                <td>2008/11/28</td>
-                                <td>$162,700</td>
+
+                                <td colspan="2"><a href="" class="btn btn-outline-warning" style="margin-right: 5px;">Editar</a><a href="" class="btn btn-outline-danger">Eliminar</a></td>
                             </tr>
 
                         </tbody>
@@ -335,10 +310,8 @@
                             <tr>
                                 <td><strong>Name</strong></td>
                                 <td><strong>Position</strong></td>
-                                <td><strong>Office</strong></td>
-                                <td><strong>Age</strong></td>
-                                <td><strong>Start date</strong></td>
-                                <td><strong>Salary</strong></td>
+                                <td><strong>Accao</strong></td>
+
                             </tr>
                         </tfoot>
                     </table>

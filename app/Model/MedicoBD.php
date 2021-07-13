@@ -55,19 +55,16 @@ class MedicoBD extends ClassConnection
         $query = $this->connectionDB()->query("SELECT * FROM tb_medico");
 
         echo json_encode($query->fetch_all(MYSQLI_ASSOC));
-
-       /* while ($paciente = $query->fetch_array()) {
-            echo "<tr>";
-            echo "<td>" . $paciente['nomeMed'] . "</td>";
-            echo "<td>" . $paciente['sobreMed'] . "</td>";
-            echo "<td>" . $paciente['experiencia'] . "</td>";
-            echo "<td>" . $paciente['sexo'] . "</td>";
-            echo "<td>" . $paciente['especialidade'] . "</td>";
-            echo "<td>" . $paciente['centroReg'] . "</td>";
-            echo "<td colspan=\"2\">" . "<a id=\"idlock\" class=\" btn btn-outline-warning\" href=\"#\" data-action=" . DIRPAGE . "AdminMenu\updateMed\" data-id=" . $paciente['codMed'] . " style=\"margin-right: 5px;\">Editar</a>";
-            echo "<a id=\"idlock\" class=\" btn btn-outline-danger\" href=\"#\" data-action=" . DIRPAGE . "AdminMenu/deleteMed/" . $paciente['codMed'] . ">Eliminar</a></td>";
-            echo "</tr>";
-        }*/
+    }
+    public function eliminar($Id)
+    {
+        $query = "DELETE FROM `tb_medico` WHERE codMed = '$Id' ";
+        if (mysqli_query($this->connectionDB(), $query)) {
+            echo json_encode("Sucesso!!");
+        } else {
+            echo json_encode("ERROR: Hush! Sorry $query. "
+                . mysqli_error($this->connectionDB()));
+        }
     }
 }
 

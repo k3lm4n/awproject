@@ -23,9 +23,23 @@ class ControllerMedico extends MedicoBD
 
     public function put()
     {
+       $id = $_POST['id'];
+        
+        echo json_encode($id);
+       
     }
 
     public function delete()
     {
+        $id = $_POST['id'];
+        
+        echo json_encode($_POST['id']); 
+        /*
+        if(empty($data["id"])){
+            return;
+        }else{
+            $id = filter_var($data["id"],FILTER_VALIDATE_INT);
+            $this->eliminar($id);
+        }*/
     }
 }
